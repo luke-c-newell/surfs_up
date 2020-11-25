@@ -25,7 +25,11 @@ Overall, the analysis has shown that weather in Hawaii is certainly suitable for
 The small standard deviation values also support this conclusion as the average daily temperature does not fluctuate greatly in either month. The additional analysis done on rainfall values also highlights that there is very little rain on a regular basis in Hawaii. The large max values for rainfall do suggest that there are days when a significant volume of rainfall occurs, both in June and December. This should not be limiting factor in the decision to set up a Surf and Ice Cream shop on the island as for the majority of days the weather will be ideal! 
 
 ### Code sample for additional queries which created two precipitation DataFrames for June and December
-``` december_rain = session.query(Measurement.date, Measurement.prcp).\
-    filter(Measurement.date.like('%-12-%')).all()```
-``` june_rain = session.query(Measurement.date, Measurement.prcp).\
-    filter(Measurement.date.like('%-06-%')).all()```
+``` 
+december_rain = session.query(Measurement.date, Measurement.prcp).\
+    filter(Measurement.date.like('%-12-%')).all()
+```
+``` 
+june_rain = session.query(Measurement.date, Measurement.prcp).\
+    filter(Measurement.date.like('%-06-%')).all()
+```
