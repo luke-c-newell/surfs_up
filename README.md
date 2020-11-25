@@ -26,10 +26,10 @@ The small standard deviation values also support this conclusion as the average 
 
 ### Code sample for additional queries which created two precipitation DataFrames for June and December
 ``` 
-december_rain = session.query(Measurement.date, Measurement.prcp).\
-    filter(Measurement.date.like('%-12-%')).all()
-```
-``` 
 june_rain = session.query(Measurement.date, Measurement.prcp).\
     filter(Measurement.date.like('%-06-%')).all()
+```
+``` 
+december_rain = session.query(Measurement.date, Measurement.prcp).\
+    filter(Measurement.date.like('%-12-%')).all()
 ```
